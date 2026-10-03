@@ -1,0 +1,369 @@
+ /* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  width: 100%;
+  min-height: 560px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 70px 24px 85px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #f8fafc 70%,
+      #ffffff 100%
+    );
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1100px;
+
+  text-align: center;
+}
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 17px;
+
+  border-radius: 30px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.hero h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: clamp(
+    48px,
+    6vw,
+    72px
+  );
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -2.5px;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.hero p {
+  max-width: 760px;
+
+  margin: 25px auto 42px;
+
+  color: #64748b;
+
+  font-size: 19px;
+
+  line-height: 1.65;
+}
+
+/* =====================================================
+   SEARCH BOX
+===================================================== */
+
+.hero-search {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 12px 35px rgba(
+      15,
+      23,
+      42,
+      0.08
+    );
+
+  text-align: left;
+}
+
+/* =====================================================
+   SEARCH FIELD
+===================================================== */
+
+.search-field {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  padding: 0 22px;
+}
+
+.keyword-field {
+  border-right: 1px solid #e2e8f0;
+}
+
+.search-icon {
+  flex-shrink: 0;
+
+  margin-right: 14px;
+
+  font-size: 22px;
+}
+
+.search-field input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  font-family: inherit;
+}
+
+.search-field input::placeholder {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.search-jobs-btn {
+  flex-shrink: 0;
+
+  min-height: 52px;
+
+  padding: 0 28px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-jobs-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(
+      37,
+      99,
+      235,
+      0.25
+    );
+}
+
+.search-jobs-btn:active {
+  transform: translateY(0);
+}
+
+/* =====================================================
+   POPULAR
+===================================================== */
+
+.popular-searches {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 25px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.popular-searches strong {
+  color: #475569;
+}
+
+.popular-btn {
+  padding: 8px 15px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #475569;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.popular-btn:hover {
+  border-color: #93c5fd;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: auto;
+
+    padding:
+      60px 20px
+      70px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+
+    padding: 10px;
+
+    gap: 8px;
+  }
+
+  .search-field {
+    width: 100%;
+
+    min-height: 52px;
+
+    box-sizing: border-box;
+
+    padding: 0 15px;
+  }
+
+  .keyword-field {
+    border-right: none;
+
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .search-jobs-btn {
+    width: 100%;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding:
+      45px 16px
+      55px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+
+    padding: 8px 13px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .hero p {
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+  }
+
+  .popular-searches {
+    gap: 7px;
+  }
+
+  .popular-btn {
+    padding: 7px 11px;
+
+    font-size: 12px;
+  }
+}
